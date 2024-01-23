@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>用 Firebase Authentication 做一套簡易會員系統 - 電子郵件 密碼 - August - Let's Write</title>
+    <title>步行貓 登入系統</title>
     <link rel="canonical" href="https://www.letswrite.tw/firebase-auth/"/>
     <meta property="og:url" content="https://letswritetw.github.io/letswrite-firebase-auth/"/>
     <meta property="fb:app_id" content="911000986339138"/>
@@ -44,7 +44,7 @@
       <section class="user-null none">
         <!-- 登入 || 註冊 表單-->
         <div class="form-card">
-          <div class="cat mb-4"><img src="dist/cat_input.svg"/><a href="https://letswrite.tw/firebase-auth-email/" target="_blank">Let's Write 筆記文 »</a></div>
+          <div class="cat mb-4"><img src="dist/cat_input.svg"/><a href="#" target="_blank">歡迎使用»</a></div>
           <div class="tab-title mb-4"><a class="active" href="#" data-value="signin">登入</a><a href="#" data-value="create">註冊</a></div>
           <div class="input-group mb-4">
             <input class="u-full-width" id="email" type="email" placeholder="輸入帳號"/>
@@ -74,7 +74,9 @@
           <p id="user-uid"></p>
           <p id="user-name"></p>
           <p id="user-email-verify"></p>
+          <a href="https://go.walking-cat.com/member" target="_blank">會員專區</a>
           <p></p>
+          
         </div>
         <div class="input-group mb-4">
           <button class="button button-primary" id="editor" type="button">更新顯示名稱</button>
@@ -108,9 +110,6 @@
         </div>
         <div class="input-group mb-4">
           <input class="u-full-width" id="new-password" type="password" placeholder="輸入新密碼"/>
-        </div>
-                <div class="input-group mb-4">
-             <input type="button" value="會員專區" onclick="location.href='https://go.walking-cat.com/memeber'">
         </div>
         <div class="input-group mb-4">
           <button class="button button-primary" id="sure-password" type="button">確認更新</button>
